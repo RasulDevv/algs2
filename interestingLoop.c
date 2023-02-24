@@ -11,6 +11,15 @@ void func1(){ // great and interesting loop
 	}
 }
 
+void interesting_loop(){
+    int i=0;
+    A:if(i<=20){
+        printf("%d  ", i);
+        i=i+1;
+        goto A;
+    }
+}
+
 int main(){
     func1();
     return 0;
