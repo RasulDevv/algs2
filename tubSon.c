@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 void scanf_1(){
     int son1,son2=0; printf("son kiriting: "); scanf("%d", &son1);
@@ -30,6 +31,17 @@ void scanf_2(){
     }
 }
 
+void scanf_3(){
+    int son1,son2=0,i=1,g=0; printf("son kiriting: "); scanf("%d", &son1);
+    int q = floor(sqrt(son1));
+    while(i<=q){
+        if(son1%i==0) ++g;
+        ++i;
+    }
+    if(g==1) printf("true");
+    else printf("false");
+}
+
 void massiv(){
     int son[]={1,2,3,4,5,6,7,8,9,0,-1,-3,13,19};
     // printf("natija: %d\n", son[10]);
@@ -51,6 +63,7 @@ void massiv(){
 int main(){
     // scanf_1();
     // scanf_2();
+    // scanf_3();
     // massiv();
     return 0;
 }
